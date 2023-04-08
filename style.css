@@ -1,0 +1,71 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 50px;
+}
+
+label {
+	margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"],
+input[type="time"] {
+	padding: 10px;
+	border-radius: 5px;
+	border: 1px solid #ccc;
+	width: 300px;
+	margin-left: 10px;
+}
+
+input[type="button"] {
+	background-color: #007bff;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	width: 300px;
+	margin-top: 20px;
+}
+
+#message {
+	text-align: center;
+	margin-top: 50px;
+}
+body {
+	font-family: Arial, sans-serif;
+  }
+  
+  #user-details {
+	background-color: #f9f9f9;
+	padding: 20px;
+	margin: 20px;
+  }
+  
+  h2 {
+	margin-top: 0;
+  }
+  
+  p {
+	margin: 5px 0;
+  }
+  
+  .delete-icon {
+	display: inline-block;
+	margin-left: 10px;
+	cursor: pointer;
+  }
+  

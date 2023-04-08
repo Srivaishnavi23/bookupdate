@@ -1,0 +1,83 @@
+<!-- HTML Code -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Book Appointment</title>
+  <style>
+    /* CSS Code */
+    form {
+      width: 400px;
+      margin: 0 auto;
+      padding: 16px;
+      border: 1px solid black;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    input[type=text], input[type=email], input[type=tel], input[type=submit] {
+      display: block;
+      margin-top: 8px;
+      padding: 8px;
+      border: 1px solid black;
+    }
+  </style>
+  <script>
+    // JavaScript Code
+    function editAppointment(date, time, name, email, phone) {
+      document.getElementById("date").value = date;
+      document.getElementById("time").value = time;
+      document.getElementById("name").value = name;
+      document.getElementById("email").value = email;
+      document.getElementById("phone").value = phone;
+      document.getElementById("submit-btn").value = "Update";
+    }
+  </script>
+</head>
+<body>
+  <h1>Book Appointment</h1>
+  <table>
+    <tr>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Phone</th>
+      <th>Edit</th>
+    </tr>
+    <tr>
+      <td>2023-04-10</td>
+      <td>10:00 AM</td>
+      <td>John Doe</td>
+      <td>johndoe@example.com</td>
+      <td>555-1234</td>
+      <td><button onclick="editAppointment('2023-04-10', '10:00 AM', 'John Doe', 'johndoe@example.com', '555-1234')">Edit</button></td>
+    </tr>
+    <!-- Add more rows for other appointments -->
+  </table>
+  <h2>Appointment Form</h2>
+  <form>
+    <input type="hidden" id="date" name="date">
+    <input type="hidden" id="time" name="time">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone">
+    <input type="submit" id="submit-btn" name="submit" value="Book Appointment">
+  </form>
+
+
+     
+
+
+
+
+
+		  
+
+	<script src="book.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"></script>
+</body>
+</html>
